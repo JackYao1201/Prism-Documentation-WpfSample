@@ -22,7 +22,11 @@ namespace WpfApp1
 
 		protected override Window CreateShell()
 		{
+			// explicit view model creation
 			var w = Container.Resolve<MainWindow>();
+
+			// or injected
+			// var w Container.Resolve<Views.MainWindow>();
 			return w;
 		}
 	}
